@@ -1,0 +1,26 @@
+{
+  "name": "nodecycler-data",
+  "version": "1.0.0",
+  "description": "Provides node/route data to nodecycler",
+  "main": "index.js",
+  "files": ["dist/"],
+  "scripts": {
+    "start": "node ./src/process.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nodecycler/data.git"
+  },
+  "author": "Mathieu Maes <mathieu@webberig.be>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nodecycler/data/issues"
+  },
+  "homepage": "https://github.com/nodecycler/data#readme",
+  "devDependencies": {
+    "@esri/arcgis-rest-feature-layer": "^2.12.0",
+    "@esri/arcgis-rest-request": "^2.12.0",
+    "cross-fetch": "^3.0.4",
+    "isomorphic-form-data": "^2.0.0"
+  }
+}
