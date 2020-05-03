@@ -27,6 +27,7 @@ Promise.all([fetchRoutes, fetchNodes])
         location: geometry.coordinates,
       }
     });
+    fs.writeFileSync("./dist/routes.json", JSON.stringify(routes));
 
     routes.features.forEach(({properties, geometry}) => {
       fs.writeFileSync(`./dist/routes/${properties.pid}.json`, JSON.stringify(
