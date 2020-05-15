@@ -1,9 +1,11 @@
 {
   "name": "nodecycler-data",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Provides node/route data to nodecycler",
   "main": "index.js",
-  "files": ["dist/"],
+  "files": [
+    "dist/"
+  ],
   "scripts": {
     "start": "node ./src/process.js"
   },
