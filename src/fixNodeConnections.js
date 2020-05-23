@@ -4,7 +4,12 @@ const routes = require("../dist/routes.json");
 
 // Reset all connections
 const processedNodes = {};
-nodes.forEach(node => {
+
+const unneededNodes = ["3638250"];
+
+nodes
+    .filter(node => !unneededNodes.includes(node.id))
+    .forEach(node => {
     node.connections = [];
     processedNodes[node.id] = node;
 })

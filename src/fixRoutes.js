@@ -13,6 +13,13 @@ routes.features = routes.features.filter(route => {
     return !routePids.includes(newPid);
 });
 
+// remove route 3408016-3638250, 1323081-3638250
+const unneededRoutes = [
+    "1323081-3638250",
+    "3408016-3638250"
+]
+routes.features = routes.features.filter(route => !unneededRoutes.includes(route.properties.pid));
+
 // number 67 problem
 // - replace 3408079 > 3618218
 const routeTo67 = routes.features.find(route => route.properties.pid === "3408016-3408079_2");
