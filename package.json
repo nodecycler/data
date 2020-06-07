@@ -1,6 +1,6 @@
 {
   "name": "nodecycler-data",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Provides node/route data to nodecycler",
   "main": "index.js",
   "files": [
